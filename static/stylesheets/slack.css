@@ -245,23 +245,39 @@ div.caption img {
     border-bottom-width: 0px;
 }
 
-#startup-banner {
+.startup-banner {
     text-align: center;
     background-color: rgb(230,230,230);
-    padding-top: 10px;
     padding-bottom: 15px;
     border-left: 2px black solid;
     border-right: 2px black solid;
+}
+
+#banner-top {
+    border-bottom: 2px rgb(150,150,150) solid;
+    padding-top: 10px;
+}
+
+#banner-bottom {
+    border-top: 2px rgb(150,150,150) solid;
+}
+
+#banner-bottom .notice {
+    background-color: rgb(180,180,180);
+    font-weight: bold;
+    color: rgb(80,80,80);
+    margin-bottom: 10px;
+    padding: 10px;
     border-bottom: 2px rgb(150,150,150) solid;
 }
 
-#startup-banner a:link, #startup-banner a:visited {
+.startup-banner a:link, .startup-banner a:visited {
 }
 
 .startup {
     display: inline-block;
 }
 
-#browserling.startup {
+.browserling.startup {
     margin-right: 20px;
 }
