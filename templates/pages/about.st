@@ -1,20 +1,14 @@
-<div style="float: left; margin-right: 2em; width: 330px">
+<div style="margin-right: 2em; width: 330px">
     <img
         src="$ blogroot $/images/self.png"
         alt="self"
         style="float: left; margin-right: 2em;"
-        width="300px" height="408px"
+        width="227" height="283"
     />
     <br />
-    <img
-        src="$ blogroot $/images/interplanetary-brotherhood-of-robots.png"
-        alt="interplanetary brotherhood of robots"
-        width="325px" height="355px"
-        style="margin-top: 1em"
-    />
 </div>
 
-<div style="min-height: 800px">
+<div style="margin-left: 300px; max-width: 700px">
 
 <h1>About Contact</h1>
 <p>
@@ -49,9 +43,10 @@
     I studied <a href="http://cs.uaf.edu/">computer science</a>
     at the University of Alaska, Fairbanks and might even get around to
     doing that graduation paperwork sometime.
-    
-    I live in a poorly-insulated but cozy two-story building covered in chalk art
-    a short walk or bike ride from campus.
+</p>
+
+<p>
+    I live in Oakland, California.
 </p>
 
 <p>

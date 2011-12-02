@@ -48,14 +48,18 @@ rssify :: M.Map String DB.SqlValue -> RSS.Item
 rssify post =
     (RSS.Title title)
     : (RSS.Description desc)
-    : (RSS.Link $ uri
-        $ "http://substack.net/posts/" ++ pid ++ "/" ++ stripper title)
+    : (RSS.Source (uri link) title)
+    : (RSS.Link $ uri link)
     : mDate
     where
+        link = "http://substack.net/posts/" ++ pid ++ "/" ++ stripper title
+        
         f DB.SqlNull = ""
         f x = DB.fromSql x
+        
         [pid,title,desc,timestamp] = map (f . (post M.!))
             $ words "id title description timestamp"
+        
         format = "%Y-%m-%d %H:%M:%S"
         locale = defaultTimeLocale
         mDate = case parseCalendarTime locale format timestamp of

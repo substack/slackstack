@@ -32,6 +32,7 @@ img#robot {
     padding-right: 1em;
     padding-left: 2em;
     margin-bottom: 3em;
+    width: 250px;
 }
 
 #sidebar {
@@ -71,6 +72,10 @@ img#robot {
     margin-left: 2em;
     margin-bottom: 5em;
     overflow: auto;
+}
+
+.code {
+    background-color: rgb(230,230,230);
 }
 
 #content div.post code {
@@ -168,7 +173,6 @@ img#robot {
 }
 
 #sidebar a {
-    font-weight: bold;
 }
 
 #sidebar a:link {
@@ -239,4 +243,25 @@ div.caption img {
 #page-links div a img {
     border-width: 0px;
     border-bottom-width: 0px;
+}
+
+#startup-banner {
+    text-align: center;
+    background-color: rgb(230,230,230);
+    padding-top: 10px;
+    padding-bottom: 15px;
+    border-left: 2px black solid;
+    border-right: 2px black solid;
+    border-bottom: 2px rgb(150,150,150) solid;
+}
+
+#startup-banner a:link, #startup-banner a:visited {
+}
+
+.startup {
+    display: inline-block;
+}
+
+#browserling.startup {
+    margin-right: 20px;
 }
